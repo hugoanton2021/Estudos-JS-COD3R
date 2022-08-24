@@ -1,0 +1,20 @@
+O que vai acontecer: 
+1 Vai chamar a função start la no final
+2 A função start vai criar uma variável para
+ arquivar o botão html dentro do js
+ agora o botão html é a var do js
+3 o botão ( a variável) vai se linkar a uma função"quando"
+ quando clicarem no botão ele vai receber
+ a função 3
+4 Essa função vai transformar os input html
+para dentro de variáveis js
+5 vamos colocar essas variáveis input
+em outras variáveis
+para poder armazenar o valor que for colocado
+nelas
+6 vamos criar uma var imc para receber a função
+que foi criada para calcular, ou seja, esse var imc
+vai receber a função que calcula
+
+
+

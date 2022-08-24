@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Base</title>
+  </head>
+  <body>
+    <header>
+      <a id="return-to-head"></a>
+      <h1>Conteúdo dentro do Header!</h1>
+    </header>
+
+    <main>
+      <h1>Conteúdo dentro da Main!</h1>
+      <h2>Conteúdo dentro da Main!</h2>
+      <h3>Conteúdo dentro da Main!</h3>
+      <h4>Conteúdo dentro da Main!</h4>
+      <h5>Conteúdo dentro da Main!</h5>
+      <h6>Conteúdo dentro da Main!</h6>
+      <a id="after-h6"></a>
+      <a href="#run-final">Ir ao final da página</a>
+      <!--Criei um id la em baixo com o a id
+      e chamei ele aqui  com o a e o #ancora-->
+      <p>Exemplo de Paragrafo!</p>
+      <p>Paragrafo dois para mostrar quebra linha</p>
+      <ol>
+        <!--Ordenada!-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!--Itens da lista-->
+      </ol>
+
+      <ul>
+        <!--Não ordenada!-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <table>
+        <!--Tabela!-->
+        <caption>
+          Tecnologia WEB
+        </caption>
+        <thead>
+          <!--Cabeçalho-->
+          <tr>
+            <!--Linha que se coloca coluna dentro-->
+            <th><!--Coluna-->Tipo</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!--Corpo-->
+          <!-- td é linha-->
+          <tr>
+            <td>HTML</td>
+            <td>Hyper Text Market Lenguage</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Cascating Style Sheets</td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>Também conhecido como Ecma Script</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <!--Rodapé-->
+          <tr>
+            <td>Total de Tecnologia Uteis</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br />
+      <br />
+      <figure>
+        <figcaption>Sagrado Coração Eucarístico!</figcaption>
+        <img
+          width="900"
+          src="./img/holy-eucharist-sacred-heart-miguel-cabrera.jpg"
+          alt="Coração Eucarístico de Nosso Senhor Jesus Cristo"
+        />
+        <!--Sempre colocar a img src dentro do figure-->
+        <!--E a outra tag é um titulo grudado na img-->
+      </figure>
+
+      <p>
+        <div>Exemplo de div1</div>
+        <div>Exemplo de div2</div>
+      </p>
+
+      <p>
+        <span>Exemplo de span</span>
+        <span>Exemplo de span</span>
+      </p>
+      <div>
+        <a href="#return-to-head">Voltar ao topo da página</a>
+        <!--Criei um a com id la em cima
+        e chamei aqui em baixo com o #ancora
+        mostrando o nome do id que criei-->
+        <br>
+        <a href="#after-h6">Ir ao meio</a>
+        <a id="run-final"></a>
+        <br>
+        <a target="_blank" href="./pagina2.html">Ir para outra página</a>
+        <br>
+        <a href="https://www.google.com.br/">Ir para o Google</a> 
+      </div>
+      
+      <div>
+        <button>Clique no butão</button>
+        <input type="text">
+      </div>
+    
+    </main>
+
+    <script defer src="./js/scripts.js">
+      //defer para mostrar que é para rodar
+      //o js depois de carregado todo o html
+      //src para buscar
+      //js sempre no final do body e
+      //css sempre antes do title do head
+
+      //01- Header é um cabeçalho apenas para a semantica do leitor de texto
+      //02- Main é o conteúdo principal
+      //também é só semântico e apenas para
+      //o leitor do navegador
+      //3- sempre colocar tr e td dentro de qualquer
+      //elemento central de tabelas
+      //e tr e th na thread
+      //4-div tbm é APENAS semantico. não se usa muito
+      //é apenas divisor de conteúdo para o leitor
+      //Enquanto div quebra linha
+      //o span não
+      //05-mas o span tbm é só dividir de conteúdo semantico
+      //muito útil em texto
+      //06- a id/ a href # = caminhar pela propria pag
+      //07- a target _blank href = direcionar á páginas de documentos internos
+      //08- a href normal = links externos 
+      //09- butão
+      //10-entra de texto para o usuário 
+
+    </script>
+  </body>
+</html>

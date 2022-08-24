@@ -1,0 +1,253 @@
+A ordem das sentenças e blocos de códigos no JS importam.
+Devo organizar minhas sentenças e blocos
+e meus blocos devem ser organizar de acordo com
+minha logica. 
+de cima pra baixo.( Cada bloco para uma coisa);
+JS é organizado em sentenças e blocos
+Valores literais são valores soltos como:
+"Caneta" e 1, 2, 3, 3.6, 10.
+///////////////////////////////////////////////
+//////////////////////////////////////////////
+
+
+
+Dicas:
+ctrl + / comenta tudo selecionado e crtl + apagar
+apaga os comentários
+var + "" + var = colocar espaços 
+
+"String"-> Sequência de simbolos/letras
+Tenha mais const que Variáveis
+na const pode-se criar tudo com maisc
+só mude se no final do projeto for necessário
+ou se souber que tal variável terá realmente
+variações 
+e ao usar var's priorize let
+Uma sentença de código não necessariamente é
+uma linha. 
+
+//to.Fixed () mostra a quantidade de
+//casas decimais que eu quero que imprima!
+//basta colocar .toFixed depois da var
+// e no () colocar o tanto de casas decimais
+//que eu quero que imprima!
+
+
+
+/ para ----mostrar---- um inteiro em string
+//ou seja, sequência de caracteres
+//basta usar .toString()
+//e se eu quiser 
+//transformar média, que é string, em num bin?
+//lembrando que num bin tbm é uma junção de caracteres
+//basta colocar 2 como valor.
+
+
+
+
+number com n minisculo é um num inteiro
+com N maísculo é uma função
+não função de blabla () {}
+mas função de verbo mesmo, fazer, algo funcional
+faz algo.
+
+
+
+//toda vez que aparecer NaN é porque
+//o javascript reconheceu
+//que tal dado não é um número!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const template = ` Olá ${nome}! `;
+console.log(template);
+
+// o `` era o que eu não estava conseguindo fazer
+//na aula do javascript! kkkk
+
+` olá tudo bem, eu me chamo $`{nome} !`;
+
+// também suporta quebra de linha!
+
+const templateDois= `Ola, 
+Eu me chamo : 
+${nome}`;
+console.log(templateDois);
+
+console.log (`5*5 = ${5 * 5}`);
+// não necessariamente o ${} precisa ser
+// uma variável
+//pode ser essas expressão também!
+
+//posso chamar funçoes também!
+ const up = texto => texto.toUpperCase();
+ console.log (`Ei...${up("cuidado!")}!`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+objetos e tipos primitivos são diferentes
+quanto a movimentação de dados
+se a = objeto
+e se eu faço b = a 
+se eu mudar b, o a muda, e vice verse
+porque o objeto apenas indica o caminho
+a referência, daquele objeto. daquele atrib
+então se eu mudo b, mudo o objeto que é
+individual, logo o a muda.
+pois eu *IGUALEI* (a = b) o endereço de memoria!
+passagem por referência.
+
+
+
+
+
+mas com um numero primitivo não.
+se c = 3
+e se d = c 
+e se d++ ( d + 1)
+d = 4  e c continua = 3 .
+Porque? porque é feito uma copia
+logo, c e d são com valores individuais
+e não compartilhados
+
+ou
+seja
+
+
+tipos primitivos copiam valores 
+e cada valor em sua variável é particular
+
+objetos apenas referênciam, linkam, o objeto
+ou seja, apenas mandam o endereço
+então c e d estariam apontando para um mesmo valor
+logo, se você mudar c vai mudar d e vice versa!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Undefined - > sem inicializar, quase n existe
+//Null - > não aponta ou nem copia a nenhum valor
+// Quando programar, quando quiser tirar
+//o valor de uma variável
+//e que ela não aponte a mais nenhum dado
+//prefira atribuir o valor NULL
+//ao invés de apagar ou remover o valor dela
+//ou até criar ela sem valor algum.
+//para objetos use o delete antes 
+//delete produto.preco
+//ira deletar o valor ou o atributo preco
+//ou, as vezes, null tbm
+//mas nunca undefined, sempre delete, nulo, -1,  0 , etc..
+//PROGRAMADOR SÓ USA NULL
+
+
+
+
+
+
+
+
+Eu posso atribuir valores e atributos
+a um objeto no javascript
+dinamicamente.
+
+tradicionalmente: 
+
+produtos {
+  name: "Hugo",
+  altura: 1.64,
+
+}
+
+Dinamicamente: 
+
+produto.name = "Hugo";
+produto.altura = 1.64;
+
+
+
+
+
+
+//posso armazenar função em var
+//passar funcao como parametro
+
+
+
+
+
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+
+
+
+  Regras de Variáveis entre Blocos e Escopos:
+
+  1°- Não dá para utilizar uma var antes de a criar.
+  Ou seja, para o leitor, eu não posso utilizar uma var
+  em cima e em baixo a criar.
+  Sempre lembrar: O leitor lê de cima pra baixo.
+
+
+  OBS : A VAR consegue, mas dá undefined, 
+  mas seu program vai rodar.
+  a let não, e dá erro.
+
+  2°-A Var é global e local, ou seja, se você criar ela no escopo global
+  você pode utilizar ela nos proximos escopos globais e locais (blocos)
+  Se eu crio uma var em bloco e chamo ela em outro bloco, vai ler.
+  Se eu crio uma var no global e chamo ela em um bloco local, vai ler.
+  Se eu crio uma var em um bloco local e chamo ela depois no global, vai ler.
+
+  3°- A Let é também local e global, mas com uma diferença.
+    Que global, ela funciona em tudo, e se local, só no local que foi criada.
+    Se eu criar uma let no escopo global, eu posso usa-la em escopos locais.
+    MAS 
+    Se eu criar uma let em um escopo particulr, ela só funcionará nesse escopo particular.
+    Ou seja, só consigo manipular let em todos os lugares se ela for criada no global.
+    Se ela for criada em uma local, não funcionará depois nem no global e nem em outra local
+    a não ser naquela mesma que ela foi criada.
+
+
+
+

@@ -1,0 +1,30 @@
+Seletores
+seletor de tag é só chamar a tag
+seletores de classes precedidos por " . "
+seletores de id precedidos por " # " 
+Para adicionar css individualmente tem que
+criar um atributo class para a tag
+e chama-lo
+por exemplo, se eu tiver 10 h3
+e quiser estilizar especificamente só o 1 e 6
+class para várias tags/elementos
+id para um só.
+Dentro do {} temos propriedades e valores também, os dois juntos
+se chamam declaration
+
+
+
+Exemplos de propriedades
+
+margin : margem externa
+padding: margem interna
+border : borda
+display : posicionar elementos
+font-size : tamanho de fonte
+font-family: tipo de fonte
+backgoroung-color : cor de fundo
+color : cor do texto
+cursor : tipo de cursor do mouse
+list-style-type : tipo de estilos de lista <li>
+width : largura
+heigth : altura
