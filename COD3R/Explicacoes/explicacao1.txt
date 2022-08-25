@@ -216,6 +216,65 @@ produto.altura = 1.64;
 
 
 
+
+
+
+
+
+
+
+
+
+
+//ARROW DE UMA LINHA SÓ
+const subtracao = (a , b ) => a - b;
+//*OBS: só se usa quando se tem apenas
+//UMA sentença de código.
+const imprimir2 = a => console.log(a);
+imprimir2(7556754);
+
+const imprimir3 = (a , b) => console.log(a + b);
+
+imprimir3 ( 3, 467);
+
+
+
+  const teste = () =>
+  {
+    var localnaFunction = 1234;
+
+  }
+  teste();
+  //aqui só se chama para ativar a funcao!
+  ou seja, eu sempre tenho que chamar a funcao
+  mesmo que nao tenha nada nela 
+  mesmo que eu só queira acessar uma var 
+  criada nela
+  tenho de chamar!
+
+
+
+
+
+
+
+
+
+
+
+
+//EVITE CRIAR QLQR TIPO DE VAR EM ESCOPO GLOBAL!
+//JUSTAMENTE POR CAUSA DO RISCO DE
+//SUBSCREVER OS VALORES INICIAIS POR OUTROS
+//DURANTE A CONSTRUCAO DE UM CODIGO
+
+
+
+
+
+
+
+
 ///////////////////////////////////////////////
 ///////////////////////////////////////////////
 
@@ -248,6 +307,42 @@ produto.altura = 1.64;
     Se ela for criada em uma local, não funcionará depois nem no global e nem em outra local
     a não ser naquela mesma que ela foi criada.
 
+4°- A exceção da regra do VAR é a Function.
+5°- let SEMPRE ( sem exceção na function) vai
+ser acessivel e vísivel apenas no bloco criado.
 
+ 6°- * OBS:  O LEITOR VAI DAR PREFERÊNCIA
+ * AO ESCOPO MENOR
+ * SE NÃO TIVER REFERÊNCIA AO ESCOPO MENOR
+ * ELE IRA PARA O ESCOPO ANTERIOR.
+ * NO NOSSO CASO, O GLOBAL.
+ * ENTÃO SE EU CRIAR UM LET2 NO ESCOPO LOCAL
+ * E MANDAR IMPRIMIR A LET1 QUE É GLOBAL
+ * NO ESCOPO LOCAL
+ * VAI IMPRIMIR
+ * 
+ */
 
+let numUM = 1;
 
+{
+  let numDois = 2;
+  console.log (numUM);
+}
+//pois lembrando que let tbm é global e local
+//mas com preferência e enfase no
+//escopo local/menor
+
+a tendência é sempre o escopo menor e subindo
+de cima pra baixo.
+se não encontrar nada em seu escopo, sobe 
+sobe, sobe, e vai até global se preciso.
+isso se não achar a global antes. 
+
+RESUMINDO :
+ * VAR: ESCOPO GLOBAL, FUNC
+ * LET: ESCOPO GLOBAL, FUNC, BLOCO
+ * (VAR ACESSA TUDO POR SER GLOBAL MAS É PART NA FUNC)
+ * (LET ACESSA TUDO POR SER  GLOBAL MAS É 
+ * PARTICULAR NA FUNC E PARTICULAR NO BLOCO)
+ 
