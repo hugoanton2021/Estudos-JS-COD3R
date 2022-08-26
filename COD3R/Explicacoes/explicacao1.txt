@@ -215,7 +215,33 @@ produto.altura = 1.64;
 
 
 
+C O N T E X T O L E X I C O :
 
+é basicamente o contexto do escopo que cada dado foi criado.
+eu posso criar dados com nomes iguais
+mas não irão se interferir, se estiverem em contextos diferentes.
+exemplo :
+
+const saudacao = "falaaaa";
+
+const func = function () {
+  const saudacao = "oie";
+  return saudacao;
+}
+
+console.log(saudacao);
+console.log(func);
+
+ambos vao mostrar seus respectivos valores
+mesmo que tenham nomes identificadores iguais
+pois estão em contextos diferentes.
+
+se eu colocasse um ''const saudacao = epa;" fora dos {}
+daria um erro falando " você ja declarou nesse contexto lexico"
+que é o global, onde criei o "const saudacao = "falaaaa";
+se fosse com var, daria
+mas ele jogaria o var para cima e o declararia undefined
+para só depois atribuir valor a ele quando vc atribuiu.
 
 
 
