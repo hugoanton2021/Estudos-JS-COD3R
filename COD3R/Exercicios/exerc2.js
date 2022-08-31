@@ -3,3 +3,8 @@ function idadeEmAnos(idade) {
   return console.log(anoEmDias);
 }
 idadeEmAnos(25);
+//2
+const idadeEmDias = idade => {
+  return idade * 365;
+};
+console.log(idadeEmDias(25));

@@ -58,4 +58,24 @@ mesesDois(2);
  * 0 1 2 = março
  * 1 2 = fevereiro.
  * dai tive que decrementar um com --
+ * 4
  */
+
+const mesesTres = numero => {
+  contagem = [
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro',
+  ];
+  return console.log(contagem[--numero]);
+};
+mesesTres(3);
