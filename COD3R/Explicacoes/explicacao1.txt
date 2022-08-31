@@ -246,7 +246,9 @@ para só depois atribuir valor a ele quando vc atribuiu.
 
 
 
-
+FUUUUUUUUUUUUUUUUGIR DO ESCOPO GLOBAL
+NAO CRIAR VARIAVEIS NEEEEEEELEEEEE
+SO COOOOOONST
 
 
 
