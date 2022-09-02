@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font :12pt Arial;
+    }
+
+    button {
+    font-size: 12pt;
+    padding:15px;
+    }
+  </style>
+</head>
+<body>
+  <h1><strong>Trabalhando com a DOM</strong></h1>
+  <button onclick="iniciar()">Clique aqui, curioso!</button>
+  <p id="resultado"> Aqui sairá seu tão desejado nome!</p>
+
+
+  <script>
+     function iniciar()
+      {
+        const nome = window.prompt("Insira aqui, por favor, vosso excelentíssimo nome");
+        const res = window.document.querySelector("#resultado");
+        res.innerHTML = `Olá! <strong>${nome}</strong>! É um grande prazer tê-lo como cobaia! &#x1F596;`
+
+       
+      }
+  </script>
+
+     
+   
+  
+</body>
+</html>
+<!-- 
+  button vai receber a função
+  section, tag nova, é apenas algo generico para armazenar algo dentro, no caso o p
+  e section vai receber o id = resultado.
+  Quando o usuário clicar no botão
+  Vai aparecer a window prompt para ele colocar seu nome
+  que vai ser armazenado na const nome
+  depois disso, o comando window.document.getElementById vai chamar uma id, no caso, a tag section.
+  esse comando chama especificamente uma id, mas poderia usar o document.QuerySelection que iria selecionar qualquer coisa
+  bastando eu indicar no () se é #, . ou tag mesmo.
+  e vai armazenar esse id, ou seja, essa tag dentro de uma constante chamada res.
+  o conteúdo da constante res é esse id, e o conteudo desse id é o <p>
+  então, no final das contas, const res armazena o texto do <p>
+  por ultimo, a função vai mudar o dado armazenado da const res
+  com o comando .innerHTML
+  então, .innerHTML vai mudar o valor da const res
+  que é um codigo que altera o conteúdo de uma tag html.
+  para um texto concatenado com uma variável
+  ou seja, o texto de p vai ser outro agora e levando consigo o valor da variável, que é, o que o usuário colocar
+
+  coisas novas:
+  window.document.getElementById = comando que seleciona apenas ids, sem precisar mencionar # ou .
+  .innerHTML que é uma função .js que modifica o conteúdo de uma tag html
+  &#x1F596; que insere um emoji no html
+  e, se você cria um evento que chama uma funcao e depois cria ela
+  você não pode transformar a criação dessa funcao em comentário
+  pois depois se for criar outra funcao com o mesmo nome dará bug
+  ai terá que mudar o nome do evento clickon e da funcao 
+
+
+
+ -->

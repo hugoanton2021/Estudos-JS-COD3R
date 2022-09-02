@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>Não sei o que vai fazer</h1>
+    <button onclick="inicio()">Clique aqui</button>
+
+     <script>
+      function inicio ()
+    {
+      const nome = window.prompt ("Qual é o seu nome?");
+      window.alert (`Olá, ${nome}!`)
+    }
+    </script> 
+
+<!--     
+    a tag button vai receber uma função-evento chamada onclick
+    o valor desse evento é chamar uma função chamada inicio ()
+    todas as vezes que alguém clicar naquele botão
+    vai chamar aquela função
+    a função vai fazer o seguinte:
+    armazenar em uma variável o valor que o usuário
+    colocar no prompt
+    e exibir esse valor concatenado com um texto
+    coisas novas aprendidas:
+    evento onclick.
+    função arrow no funciona em arquivo.html
+    window.prompt = recebe informação
+    window.alert devolve printado a informação
+     -->
+</body>
+</html>
