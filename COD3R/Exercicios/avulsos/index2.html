@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butão</title>
+  </head>
+  <body>
+    <h1>Aperte o butão!</h1>
+    <button onclick="clicar()">Mim aperte!</button>
+    <script>
+      function clicar() {
+        window.alert('Obrigado cara!');
+      }
+    </script>
+  </body>
+</html>
+
+<!--
+    onclick é uma especie de função que se chama evento
+    ou seja, quando clicar faça = 
+    ai você vai dar um nome, como se fosse um id ou class
+    nesse caso, o nome vai ser uma propria funcao ()
+    OBS: quando for dar o nome do onclick ( como se fosse id e class)
+    e esse nome for uma função, ou seja, chamar uma função, use sempre ()
+    ou seja, <button onclick = "clicar()">
+
+
+                OBS:
+                ARROW FUNC
+                NÃO FUNCIONA EM
+                DOC.HTML
+                SÓ EM DOC.JS
+                NO CASO EU TERIA QUE CHAMAR UM JS.
+                
+  const clicar = () => {
+        window.alert('Você clicou em mim! Obrigado cara!');
+      }
+-->
