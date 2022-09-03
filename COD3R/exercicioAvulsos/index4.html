@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo</title>
+  <style>
+    body {font : 12pt Arial;}
+    button{font-size: 12pt; padding: 30px;}
+  </style>
+</head>
+<body>
+  <h1>Calculo com um número</h1>
+  <button onclick="calculo()">Faça aqui o calculo</button>
+  <section id = "resultado">
+    <p> O resultado deverá aparecer aqui...</p>
+  </section>
+
+  <script>
+    function calculo()
+     {
+      // const nUm = Number(window.prompt("Digite aqui seu número"));
+      const nUm = window.prompt("Digite aqui seu número");
+    
+      const res = window.document.querySelector("#resultado");
+      res.innerHTML = `O dobro de ${nUm} é ${nUm*2} e a metade é ${nUm/2}!`;
+       
+     }
+  </script>
+</body>
+</html>
+<!-- 
+  faço um button com evento onclick que recebe uma função
+  e uma p dentro de um section que recebe um id
+  ao clicar no botão, vai chamar minha função calculo
+  que irá guardar o que foi escrito pelo usuário no prompt que está no window
+  (posso fazer Number("Digite Aqui"))para indicar que é um número, mas não vi diferença entre os dois.
+  o .js vai buscar o id tag p "resultado" pelo query e irá deposita-lo em uma constante res
+  irei modificar esse conteúdo do p por outro, que será : o número que o usuário colocou e o resultado dele com as operações
+
+
+  coisas novas:
+  ->Number(window.prompt("")) transforma em número - não sei para que serve, já que com e sem dá NaN no final sauhduahsudsa
+  -> poder mostrar operações matemáticas e outras coisas dentro de ${}
+ -->
