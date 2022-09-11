@@ -52,4 +52,5 @@ forInTwo();
  * i recebe  atributo de objeto
  * repita i até que ele passe por todos os atributos do objt
  * e os mostre, mostrando valor do i(atributos) e  valores dos atributos (objt recebe i)
- */
+teste githubdestkp 
+*/
